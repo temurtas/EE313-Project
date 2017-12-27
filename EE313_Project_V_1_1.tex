@@ -133,7 +133,7 @@ This frequency is pretty good for blocking DC offset and noise.
 	
 	Mixer is the device that accepts two input signals and gives a output signal that consists of two distinct signals with different frequencies. While, one of these signals has a frequency that is equal to the difference between the frequencies of first signal and second signal, other signal has a frequency that is summation of the frequencies of first and second signal. In other words, if we assume input signal 1 has a frequency $f_1$ and input signal 2 has a frequency $f_2$. The output would look like  
 	
-	$$ O/P~~ Signal ~=~ A(f_1+f_2) + B(~|~f_1 -f_2~|~)  $$
+	$$ O/P~~ Signal ~=~ A(f_1+f_2) + B(|~f_1 -f_2~|)  $$
 	
 	where A and B are the signals having frequencies  
 	
@@ -195,7 +195,7 @@ This frequency is pretty good for blocking DC offset and noise.
 
 \section{Conclusion}
 \- \indent
-	First, a triangular voltage is generated with varying frequencies by a VCO circuit and 10 Hz triangular wave input. Then modulated triangular wave is sent to microphone by a speaker and to mixer at the same time. The microphone transmits the captured signal to the mixer. In the mixer, there are two equivalent inputs but with a phase shift. Output of the mixer is basically sum of two waves having frequencies $ (f_1+f_2)$ and $(|~f_1 -f_2~|) $ that are frequencies of two inputs of the mixer. If this signal is low-passed, the filtered signal have $(~|~f_1 -f_2~|~) $ frequency. By measuring $(|~f_1 -f_2~|) $, the distance between the speaker and the microphone can be found by a simple algebra, $K*(|~f_1 -f_2~|) $ where K is a constant to be determined and having unit of $\frac{Meter}{Hertz} $.
+	First, a triangular voltage is generated with varying frequencies by a VCO circuit and 10 Hz triangular wave input. Then modulated triangular wave is sent to microphone by a speaker and to mixer at the same time. The microphone transmits the captured signal to the mixer. In the mixer, there are two equivalent inputs but with a phase shift. Output of the mixer is basically sum of two waves having frequencies $ (f_1+f_2)$ and $(|~f_1 -f_2~|) $ that are frequencies of two inputs of the mixer. If this signal is low-passed, the filtered signal have $(|~f_1 -f_2~|) $ frequency. By measuring $(|~f_1 -f_2~|) $, the distance between the speaker and the microphone can be found by a simple algebra, $K*(|~f_1 -f_2~|) $ where K is a constant to be determined and having unit of $\frac{Meter}{Hertz} $.
 
  
 
