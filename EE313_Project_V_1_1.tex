@@ -1,0 +1,170 @@
+\documentclass[paper]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{gensymb} % this could be problem
+\usepackage{float}
+\usepackage{fancyref}
+\usepackage{subcaption}
+\usepackage{amssymb}
+
+
+
+\begin{document}
+
+\title{EE313 Analog Electronic Laboratory\\
+2017-2018 Fall Term Project \\
+FMCW Based Distance Measuring System
+}
+
+
+\author{
+
+\IEEEauthorblockN{1\textsuperscript{st} Halil TEMURTAS}
+\IEEEauthorblockA{\textit{2094522} }
+\textit{halil.temurtas@metu.edu.tr}
+
+\and
+
+\IEEEauthorblockN{2\textsuperscript{nd} Erdem TUNA}
+\IEEEauthorblockA{\textit{2167419} }
+\textit{erdem.tuna@metu.edu.tr}
+
+}
+
+\maketitle
+
+\begin{abstract}
+
+Design of a Frequency Modulated Continuous Wave (FMCW) Based Distance Measuring System
+Aim: In this project, you are going to design a distance measurement system as depicted in Figure 1.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Design of a Frequency Modulated Continuous Wave (FMCW) Based Distance Measuring System
+Aim: In this project, you are going to design a distance measurement system as depicted in Figure 1.
+
+\section{Transmitter}
+
+\subsection{VCO}
+
+\subsection{Power Amplifier}
+
+\subsection{Speaker}
+
+\section{Receiver}
+
+\subsection{Microphone \& Microphone Driver}
+	To receive the sound signal coming from the speaker and turn it into a electrical signal, some kind of speaker should be used. For this purpose, an electret microphone will be used. 
+	
+	To drive the electret microphone, a driver circuit will be designed. The design should include feeding for the transistor inside the microphpne and amplify the output signal since the output signal would be too small to be used. But before going amplifying the signal, we shall remove possible dc offsets and noises by a passive high pass filter. The designed driver can be seen at \textit{Figure~\ref{fig:micdr}}.
+
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.5\unitlength]{mic.png}
+\caption{\label{fig:micdr} Driver Circuit for Electret Microphone }
+\end{figure}	
+
+
+With simple node analysis in the frequency domain, the cutoff frequency of the passive high pass filter can be found as
+\begin{equation}
+f_{c} =\frac{1}{2\pi R_{42}C_{10}} 
+\end{equation}
+If we take $R_{42}=10k\Omega$ and $C_{10}=0.1\mu F$, cutoff frequency $f_c$ can be found as
+\begin{equation}
+f_{c} =\frac{1}{2\pi 10k\Omega 0.1\mu F}\approx 159 Hz
+\end{equation}
+This frequency is pretty good for blocking dc offset and noise.
+
+%\subsection{Automatic Gain Controller}
+%	Automatic gain controller is a circuit that controls gain and adjusts the amplitude of the output signal automatically. Since the output of the microphone depends on distance and frequency, AGC should be used to adjust the amplitude of the output  signal of microphone driver circuit. For that purpose a circuit at the \textit{Figure~\ref{fig:agc}} for automatic gain control in Wien Bridge will be used.
+
+%\begin{figure}[h!]
+%\setlength{\unitlength}{\textwidth}
+%\center 
+%\includegraphics[width=0.5\unitlength]{agc.png}
+%\caption{\label{fig:agc} Automatic Gain Control in Wien Bridge }
+%\end{figure}	
+
+	
+	
+\subsection{Mixer}
+	
+	Mixer is the device that accepts two input signals and gives a output signal that consists of two distinct signals with different frequencies. While, one of these signals has a frequency that is equal to the difference between the frequencies of first signal and second signal, other signal has a frequency that is summation of the frequencies of first and second signal. In other words, if we assume input signal 1 has a frequency $f_1$ and input signal 2 has a frequency $f_2$. The output would look like  
+	
+	$$ O/P~~ Signal ~=~ A(f_1+f_2) + B(~|~f_1 -f_2~|~)  $$
+	
+	where A and B are the signals having frequencies  
+	
+	$$ f_A ~= ~ f_1+f_2~~ \&~~ f_B~=~|~f_1 -f_2~| $$ respectively.
+	
+	We know that the distance between source and receiver causes a time delay proportional to the distance for the received signal in comparison to the received signal. Thanks to triangular wave used at the very beginning of the project, the distance between the source and receiver is also proportional to the the frequency difference between original source signal and received signal by receiver. This can be understood from the basic principle of VCO. Assume that the first signal left the VCO and entered the mixer at Time 0 and has a frequency $f_1$ proportional to the magnitude of triangular wave at Time 0. Similarly second signal entered the Mixer at Time 1 and has a frequency $f_2$ proportional to the magnitude of triangular wave at Time 1. Therefore, the time shift "$Time~1~-~Time~0$" is proportional to the "$|~f_2~f_1~|$". Thus, if we can find the frequency difference between this signal, we can easily find the desired distance since the distance can be found by
+	$$ d~=~(Time~1~-~Time~0)*v_s~=~K*|~f_1~-~f_2~|$$ 
+	where K is a constant and $v_s$ is the speed of sound.
+	
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.25\unitlength]{triangular.png}
+\caption{\label{fig:trimix} One Period of Triangular Wave }
+\end{figure}	
+
+	
+	For that purpose, a mixer circuit is what we need and a basic mixer circuit we are planning to use can be seen at \textit{Figure~\ref{fig:mixer}}.
+	
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.5\unitlength]{mixerv1.png}
+\caption{\label{fig:mixer} A Multiplier Circuit }
+\end{figure}	
+
+
+		
+\subsection{Low Pass Filter}
+\- \indent
+	Unfortunately, the output signal of mixer does not only carry the frequency difference info but also frequency summation info. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
+	
+	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
+
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.5\unitlength]{solpf.png}
+\caption{\label{fig:lpf} A Second Order Low-Pass Filter }
+\end{figure}	
+
+
+
+
+
+%\begin{thebibliography}{00}
+%\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., inpress.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.%\end{thebibliography}
+
+\end{document}
