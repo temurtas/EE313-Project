@@ -73,6 +73,8 @@ Aim: In this project, you are going to design a distance measurement system as d
 \end{figure}
 
 Voltage controlled oscillator (VCO) is a circuit that basically maps certain voltage values at the input to a frequency at the output. In other words, VCO outputs different frequencies as the voltage value of the input changes. The circuit to be used as VCO in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To utilize from this mapping property of the VCO in a radar application, the input to the circuit is a triangular wave such that input voltage changes continuously. Essentially, $R_{1}$ and $C_{1}$ in \textit{Figure~\ref{fig:VCO_Circuit}} are the determinative components of the voltage-to-frequency mapping. The $M_{1}$ acts like a switch that is ruling the current through the $C_{1}$. The $V_{ModTri}$ is the frequency modulated output of the circuit. This output will be used in the rest of the project. However, $V_{ModTri}$ goes one more step in the VCO circuit which is a Schmitt Trigger represented with LM2 opamp. With the positive feedback, LM2 outputs either $+V$ or $-V$. The output of the LM2 effects the state of $M_{1}$ with the input triangular voltage.
+
+
 \subsection{Power Amplifier and Speaker}
 \begin{figure}[h!]
  \setlength{\unitlength}{\textwidth}
@@ -80,6 +82,12 @@ Voltage controlled oscillator (VCO) is a circuit that basically maps certain vol
  \includegraphics[width=0.45\unitlength]{PowerAmp_Circuit}
  \caption{\label{fig:PowerAmp_Circuit}Power Amplifier Circuit Driving the Speaker.}
 \end{figure}
+The purpose of this part is to send modulated triangular signal to the electret microphone via a speaker. The circuit is presented in \textit{Figure~\ref{fig:PowerAmp_Circuit}}. The amplifier is composed of one common emitter with degeneration and a cascode. The amplifier isn't designed to amplify the voltage but the current so that speaker can be driven. The cascode stage increases the bandwidth of the circuit. Also there are feedbacks in all transistors, namely $BDN_{1}$, $BDN_{2}$ and $BDP_{1}$ to increase the voltage swing. Lastly speaker is driven with sufficiently large voltage and current values.
+
+
+
+
+
 \section{Receiver}
 
 \subsection{Microphone \& Microphone Driver}
@@ -154,7 +162,7 @@ This frequency is pretty good for blocking DC offset and noise.
 \caption{\label{fig:mixer} A Multiplier Circuit }
 \end{figure}	
 
-
+\vfill
 		
 \subsection{Low Pass Filter}
 \- \indent
@@ -179,9 +187,19 @@ This frequency is pretty good for blocking DC offset and noise.
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.5\unitlength]{diagram2.png}
+\includegraphics[width=0.5\unitlength]{diagram3.png}
 \caption{\label{fig:diagram} General Diagram of the Project }
 \end{figure}	
+
+\vfill
+
+\section{Conclusion}
+\- \indent
+	First, a triangular voltage is generated with varying frequencies by a VCO circuit and 10 Hz triangular wave input. Then modulated triangular wave is sent to microphone by a speaker and to mixer at the same time. The microphone transmits the captured signal to the mixer. In the mixer, there are two equivalent inputs but with a phase shift. Output of the mixer is basically sum of two waves having frequencies $ (f_1+f_2)$ and $(|~f_1 -f_2~|) $ that are frequencies of two inputs of the mixer. If this signal is low-passed, the filtered signal have $(~|~f_1 -f_2~|~) $ frequency. By measuring $(|~f_1 -f_2~|) $, the distance between the speaker and the microphone can be found by a simple algebra, $K*(|~f_1 -f_2~|) $ where K is a constant to be determined and having unit of $\frac{Meter}{Hertz} $.
+
+ 
+
+
 %\begin{thebibliography}{00}
 %\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 %\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
