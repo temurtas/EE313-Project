@@ -96,14 +96,18 @@ Voltage controlled oscillator (VCO) is a circuit that basically maps certain vol
 
 
 With simple node analysis in the frequency domain, the cutoff frequency of the passive high pass filter can be found as
-\begin{equation}
-f_{c} =\frac{1}{2\pi R_{42}C_{10}} 
-\end{equation}
-If we take $R_{42}=10k\Omega$ and $C_{10}=0.1\mu F$, cutoff frequency $f_c$ can be found as
-\begin{equation}
-f_{c} =\frac{1}{2\pi 10k\Omega 0.1\mu F}\approx 159 Hz
-\end{equation}
-This frequency is pretty good for blocking dc offset and noise.
+
+%\begin{equation}
+$$ f_{c} =\frac{1}{2\pi R_{2}C_{1}} $$
+%\end{equation}
+
+If we take $R_{2}=10k\Omega$ and $C_{1}=0.1\mu F$, cutoff frequency $f_c$ can be found as
+
+%\begin{equation}
+$$ f_{c} =\frac{1}{2\pi*10~k\Omega*0.1~\mu F}\approx 159 Hz $$
+%\end{equation}
+
+This frequency is pretty good for blocking DC offset and noise.
 
 %\subsection{Automatic Gain Controller}
 %	Automatic gain controller is a circuit that controls gain and adjusts the amplitude of the output signal automatically. Since the output of the microphone depends on distance and frequency, AGC should be used to adjust the amplitude of the output  signal of microphone driver circuit. For that purpose a circuit at the \textit{Figure~\ref{fig:agc}} for automatic gain control in Wien Bridge will be used.
