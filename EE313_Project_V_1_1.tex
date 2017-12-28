@@ -98,11 +98,7 @@ The purpose of this part is to send modulated triangular signal to the electret 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-<<<<<<< HEAD
 \includegraphics[width=0.45\unitlength]{micv2.png}
-=======
-\includegraphics[width=0.5\unitlength]{electret.png}
->>>>>>> 3019b4fd3e42487a3874e9949d8e676f9c7136bb
 \caption{\label{fig:micdr}Driver Circuit for Electret Microphone }
 \end{figure}	
 
@@ -162,31 +158,27 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-<<<<<<< HEAD
 \includegraphics[width=0.45\unitlength]{mixerv2.png}
 \caption{\label{fig:mixer}A Mixer Circuit }
-=======
-\includegraphics[width=0.5\unitlength]{mixerv1.png}
-\caption{\label{fig:mixer}A Multiplier Circuit }
->>>>>>> 3019b4fd3e42487a3874e9949d8e676f9c7136bb
 \end{figure}	
 
 \vfill
 		
 \subsection{Low Pass Filter}
 
-\begin{figure}[h!]
-	\setlength{\unitlength}{\textwidth}
-	\center 
-	\includegraphics[width=0.5\unitlength]{solpf.png}
-	\caption{\label{fig:lpf}A Second Order Low-Pass Filter }
-\end{figure}
+
 	Unfortunately, the output signal of mixer does not only carry the frequency difference info but also frequency summation info. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
 	
 	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
 
 	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}.
- 
+
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.5\unitlength]{solpf.png}
+	\caption{\label{fig:lpf}A Second Order Low-Pass Filter }
+\end{figure} 
 	
 
 		

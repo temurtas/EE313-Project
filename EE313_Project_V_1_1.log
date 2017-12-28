@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  28 DEC 2017 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  28 DEC 2017 12:21
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -727,11 +727,7 @@ Package caption Info: float package is loaded.
 LaTeX Warning: Unused global option(s):
     [paper].
 
-(EE313_Project_V_1_1.aux
-
-LaTeX Warning: Label `fig:mixer' multiply defined.
-
-)
+(EE313_Project_V_1_1.aux)
 \openout1 = `EE313_Project_V_1_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -871,94 +867,63 @@ Package pdftex.def Info: PowerAmp_Circuit.png used on input line 82.
 <micv2.png, id=22, 1008.76875pt x 642.90187pt>
 File: micv2.png Graphic file (type png)
  <use micv2.png>
-Package pdftex.def Info: micv2.png used on input line 102.
+Package pdftex.def Info: micv2.png used on input line 101.
 (pdftex.def)             Requested size: 232.19843pt x 147.98204pt.
 
-<electret.png, id=23, 1442.38875pt x 690.32906pt>
-File: electret.png Graphic file (type png)
- <use electret.png>
-Package pdftex.def Info: electret.png used on input line 104.
-(pdftex.def)             Requested size: 258.0pt x 123.47438pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 101--106
- [] 
- []
-
-<triangular.png, id=24, 403.5075pt x 428.60126pt>
+<triangular.png, id=23, 403.5075pt x 428.60126pt>
 File: triangular.png Graphic file (type png)
  <use triangular.png>
-Package pdftex.def Info: triangular.png used on input line 155.
+Package pdftex.def Info: triangular.png used on input line 151.
 (pdftex.def)             Requested size: 129.0pt x 137.0244pt.
 
-<mixerv2.png, id=25, 945.5325pt x 689.57625pt>
+<mixerv2.png, id=24, 945.5325pt x 689.57625pt>
 File: mixerv2.png Graphic file (type png)
  <use mixerv2.png>
-Package pdftex.def Info: mixerv2.png used on input line 166.
+Package pdftex.def Info: mixerv2.png used on input line 161.
 (pdftex.def)             Requested size: 232.19843pt x 169.34222pt.
-
-<mixerv1.png, id=26, 880.03781pt x 683.55376pt>
-File: mixerv1.png Graphic file (type png)
- <use mixerv1.png>
-Package pdftex.def Info: mixerv1.png used on input line 169.
-(pdftex.def)             Requested size: 258.0pt x 200.39499pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 168--170
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<solpf.png, id=27, 1442.38875pt x 690.32906pt>
+ [2 <./micv2.png> <./triangular.png> <./mixerv2.png>]
+<solpf.png, id=29, 1442.38875pt x 690.32906pt>
 File: solpf.png Graphic file (type png)
  <use solpf.png>
-Package pdftex.def Info: solpf.png used on input line 181.
+Package pdftex.def Info: solpf.png used on input line 179.
 (pdftex.def)             Requested size: 258.0pt x 123.47438pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 181--182
+Overfull \hbox (6.0pt too wide) in paragraph at lines 179--180
  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./micv2.png> <./electret.png> <./triangular.png>]
-<diagram3.png, id=32, 634.37pt x 396.48125pt>
+<diagram3.png, id=30, 634.37pt x 396.48125pt>
 File: diagram3.png Graphic file (type png)
  <use diagram3.png>
-Package pdftex.def Info: diagram3.png used on input line 200.
+Package pdftex.def Info: diagram3.png used on input line 192.
 (pdftex.def)             Requested size: 258.0pt x 161.2516pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 200--201
+Overfull \hbox (6.0pt too wide) in paragraph at lines 192--193
  [] 
  []
 
-[3 <./mixerv2.png> <./mixerv1.png> <./solpf.png> <./diagram3.png>]
-(EE313_Project_V_1_1.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[3 <./solpf.png> <./diagram3.png>] (EE313_Project_V_1_1.aux) ) 
 Here is how much of TeX's memory you used:
- 16556 strings out of 493323
- 315704 string characters out of 3139066
- 374422 words of memory out of 3000000
- 19744 multiletter control sequences out of 15000+200000
+ 16546 strings out of 493323
+ 315551 string characters out of 3139066
+ 373383 words of memory out of 3000000
+ 19736 multiletter control sequences out of 15000+200000
  44136 words of font info for 95 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,7n,94p,1143b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on EE313_Project_V_1_1.pdf (3 pages, 318522 bytes).
+{C:/Program Files
+/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on EE313_Project_V_1_1.pdf (3 pages, 268460 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
