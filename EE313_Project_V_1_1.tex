@@ -162,16 +162,29 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \caption{\label{fig:mixer}A Mixer Circuit }
 \end{figure}	
 
-\vfill
+
 		
 \subsection{Low Pass Filter}
 
 
 	Unfortunately, the output signal of mixer does not only carry the frequency difference info but also frequency summation info. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
 	
+\-\\
+
+
 	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
 
-	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}.
+	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}. 	
+	
+	Doing some KCL at the circuit at S-Domain and setting the expressions in order, the gain and cut-off frequency can be found to be;
+	
+	$$ A_V = ~1~+ \frac{R_A}{R_B} $$
+
+	$$	f_c ~=~ \frac{1}{2\pi RC}	$$
+	
+	Assuming capacitance value for desired frequency, resistance values can be determined. 
+	
+	
 
 \begin{figure}[h!]
 	\setlength{\unitlength}{\textwidth}
