@@ -54,7 +54,7 @@ Design of a Frequency Modulated Continuous Wave (FMCW) Based Distance Measuring 
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+oscillator, amplifier, fmcw, mixer, filter.
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -93,13 +93,13 @@ The purpose of this part is to send modulated triangular signal to the electret 
 \subsection{Microphone \& Microphone Driver}
 	To receive the sound signal coming from the speaker and turn it into a electrical signal, some kind of speaker should be used. For this purpose, an electret microphone will be used. 
 	
-	To drive the electret microphone, a driver circuit will be designed. The design should include feeding for the transistor inside the microphpne and amplify the output signal since the output signal would be too small to be used. But before going amplifying the signal, we shall remove possible dc offsets and noises by a passive high pass filter. The designed driver can be seen at \textit{Figure~\ref{fig:micdr}}.
+	To drive the electret microphone, a driver circuit will be designed. The design should include feeding for the transistor inside the microphone and amplify the output signal since the output signal would be too small to be used. But before going amplifying the signal, we shall remove possible dc offsets and noises by a passive high pass filter. The designed driver can be seen at \textit{Figure~\ref{fig:micdr}}.
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.5\unitlength]{electret.png}
-\caption{\label{fig:micdr} Driver Circuit for Electret Microphone }
+\includegraphics[width=0.45\unitlength]{micv2.png}
+\caption{\label{fig:micdr}Driver Circuit for Electret Microphone }
 \end{figure}	
 
 
@@ -149,7 +149,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \setlength{\unitlength}{\textwidth}
 \center 
 \includegraphics[width=0.25\unitlength]{triangular.png}
-\caption{\label{fig:trimix} One Period of Triangular Wave }
+\caption{\label{fig:trimix}One Period of Triangular Wave }
 \end{figure}	
 
 	
@@ -158,43 +158,44 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.5\unitlength]{mixerv1.png}
-\caption{\label{fig:mixer} A Multiplier Circuit }
+\includegraphics[width=0.45\unitlength]{mixerv2.png}
+\caption{\label{fig:mixer}A Mixer Circuit }
 \end{figure}	
 
 \vfill
 		
 \subsection{Low Pass Filter}
-\- \indent
+
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.5\unitlength]{solpf.png}
+	\caption{\label{fig:lpf}A Second Order Low-Pass Filter }
+\end{figure}
 	Unfortunately, the output signal of mixer does not only carry the frequency difference info but also frequency summation info. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
 	
 	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
 
 	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}.
  
-\begin{figure}[h!]
-\setlength{\unitlength}{\textwidth}
-\center 
-\includegraphics[width=0.5\unitlength]{solpf.png}
-\caption{\label{fig:lpf} A Second Order Low-Pass Filter }
-\end{figure}	
+	
 
 		
 \section{General Diagram}
-\- \indent
+
 	General diagram of the project can be seen at \textit{Figure~\ref{fig:diagram}}.
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
 \includegraphics[width=0.5\unitlength]{diagram3.png}
-\caption{\label{fig:diagram} General Diagram of the Project }
+\caption{\label{fig:diagram}General Diagram of the Project }
 \end{figure}	
 
 \vfill
 
 \section{Conclusion}
-\- \indent
+
 	First, a triangular voltage is generated with varying frequencies by a VCO circuit and 10 Hz triangular wave input. Then modulated triangular wave is sent to microphone by a speaker and to mixer at the same time. The microphone transmits the captured signal to the mixer. In the mixer, there are two equivalent inputs but with a phase shift. Output of the mixer is basically sum of two waves having frequencies $ (f_1+f_2)$ and $(|~f_1 -f_2~|) $ that are frequencies of two inputs of the mixer. If this signal is low-passed, the filtered signal have $(|~f_1 -f_2~|) $ frequency. By measuring $(|~f_1 -f_2~|) $, the distance between the speaker and the microphone can be found by a simple algebra, $K*(|~f_1 -f_2~|) $ where K is a constant to be determined and having unit of $\frac{Meter}{Hertz} $.
 
  
