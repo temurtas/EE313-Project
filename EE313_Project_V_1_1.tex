@@ -82,10 +82,11 @@ Voltage controlled oscillator (VCO) is a circuit that basically maps certain vol
  \includegraphics[width=0.45\unitlength]{PowerAmp_Circuit}
  \caption{\label{fig:PowerAmp_Circuit}Power Amplifier Circuit Driving the Speaker}
 \end{figure}
-The purpose of this part is to send modulated triangular signal to the electret microphone via a speaker. The circuit is presented in \textit{Figure~\ref{fig:PowerAmp_Circuit}}. The amplifier is composed of one common emitter with degeneration and a cascode. The amplifier isn't designed to amplify the voltage but the current so that speaker can be driven. The cascode stage increases the bandwidth of the circuit. Also there are feedbacks in all transistors, namely $BDN_{1}$, $BDN_{2}$ and $BDP_{1}$ to increase the voltage swing. Lastly speaker is driven with sufficiently large voltage and current values.
+This part is aimed to transmit the frequency modulated signal, which is the output of the VCO, to a medium by using a power amplifier. A Class AB amplifier is utilized for this purpose. The amplifier is basically composed of two stages that are common emitter driver and AB amplifier.
 
+The main transistor of common emitter driver is $BDN_{1}$. This transistor sets the DC biasing of $BDN_{2}$ and $BDP_{1}$. It may be considered as a current source. Also, the input signal is output as inversely polarized at the collector of the $BDN_{1}$.
 
-
+The class AB amplifier mainly consists of two transistors one of which is a NPN and the other is PNP. The diodes $D_{1}$ and $D_{2}$ are to provide Q point stability of the transistors. Also they provide constant voltage difference between the bases of $BDN_{2}$ and $BDP_{1}$. When the voltage in positive cycle, $BDN_{2}$ amplifies the signal whereas $BDP_{1}$ amplifies the signal in negative cycle. These transistors operate cooperatively according to the cycle of the signal. Lastly, feedback resistor $R_{1}$ reduces the distortion of the output signal by introducing a negative feedback to the input signal in shung-shunt topology. On the other hand, the DC biasing of $BDN_{1}$ is improvd with the use of $R_{1}$.
 
 
 \section{Receiver}
