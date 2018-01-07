@@ -118,6 +118,15 @@ $$ f_{c} =\frac{1}{2\pi*10~k\Omega*0.1~\mu F}\approx 159 Hz $$
 
 The resulting $f_c$ will be enough to remove noise and DC offsets.
 
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.45\unitlength]{mic_osc.png}
+\caption{\label{fig:micout} Output Signal of Microphone Circuit at Laboratory }
+\end{figure}	
+
+
+
 %\subsection{Automatic Gain Controller}
 %	Automatic gain controller is a circuit that controls gain and adjusts the amplitude of the output signal automatically. Since the output of the microphone depends on distance and frequency, AGC should be used to adjust the amplitude of the output  signal of microphone driver circuit. For that purpose a circuit at the \textit{Figure~\ref{fig:agc}} for automatic gain control in Wien Bridge will be used.
 
@@ -159,10 +168,23 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.45\unitlength]{mixerv2.png}
+\includegraphics[width=0.45\unitlength]{mixer_v2.png}
 \caption{\label{fig:mixer}A Mixer Circuit }
 \end{figure}	
 
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.45\unitlength]{mixer_vo.png}
+\caption{\label{fig:mixervo} The Output Waveform of the Mixer Circuit }
+\end{figure}	
+
+\begin{figure}[h!]
+\setlength{\unitlength}{\textwidth}
+\center 
+\includegraphics[width=0.45\unitlength]{mixer_fft.png}
+\caption{\label{fig:mixerfft} The Output FFT Waveform of the Mixer Circuit }
+\end{figure}	
 
 		
 \subsection{Low Pass Filter}
@@ -194,6 +216,31 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\caption{\label{fig:lpf}A Second Order Low-Pass Filter }
 \end{figure} 
 	
+
+
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.45\unitlength]{filt_osc2.png}
+	\caption{\label{fig:lpfvo1}Output Signal for 16 kHz}
+\end{figure} 
+	
+
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.45\unitlength]{filt_osc4.png}
+	\caption{\label{fig:lpfvo2}Output Signal for 2.5 kHz}
+\end{figure} 
+	
+
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.45\unitlength]{filt_osc5.png}
+	\caption{\label{fig:lpfvo2}Output Signal for 3.5 kHz}
+\end{figure} 
+		
 
 		
 \section{General Diagram}
