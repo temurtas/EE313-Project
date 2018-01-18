@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  8 JAN 2018 00:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  18 JAN 2018 23:17
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -886,58 +886,70 @@ File: triangular.png Graphic file (type png)
 Package pdftex.def Info: triangular.png used on input line 161.
 (pdftex.def)             Requested size: 129.0pt x 137.0244pt.
 
-<mixer_v2.png, id=25, 677.53125pt x 689.57625pt>
-File: mixer_v2.png Graphic file (type png)
- <use mixer_v2.png>
-Package pdftex.def Info: mixer_v2.png used on input line 171.
-(pdftex.def)             Requested size: 232.19843pt x 236.32574pt.
+<mixer_final2.png, id=25, 697.10437pt x 689.57625pt>
+File: mixer_final2.png Graphic file (type png)
+ <use mixer_final2.png>
+Package pdftex.def Info: mixer_final2.png used on input line 171.
+(pdftex.def)             Requested size: 232.19843pt x 229.68631pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<mixer_vo.png, id=26, 1442.38875pt x 690.32906pt>
-File: mixer_vo.png Graphic file (type png)
- <use mixer_vo.png>
-Package pdftex.def Info: mixer_vo.png used on input line 178.
-(pdftex.def)             Requested size: 232.19843pt x 111.12904pt.
+<mixer_vo3.png, id=26, 718.18312pt x 691.08188pt>
+File: mixer_vo3.png Graphic file (type png)
+ <use mixer_vo3.png>
+Package pdftex.def Info: mixer_vo3.png used on input line 178.
+(pdftex.def)             Requested size: 232.19843pt x 223.439pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<mixer_fft.png, id=27, 1442.38875pt x 690.32906pt>
-File: mixer_fft.png Graphic file (type png)
- <use mixer_fft.png>
-Package pdftex.def Info: mixer_fft.png used on input line 185.
-(pdftex.def)             Requested size: 232.19843pt x 111.12904pt.
+<mixer_fft3.png, id=27, 695.59875pt x 691.08188pt>
+File: mixer_fft3.png Graphic file (type png)
+ <use mixer_fft3.png>
+Package pdftex.def Info: mixer_fft3.png used on input line 185.
+(pdftex.def)             Requested size: 232.19843pt x 230.68344pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2 <./micv2.png> <./mic_osc.png (PNG copy)> <./triangular.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
+
+
+LaTeX Warning: Reference `fig:lpfio1' on page 3 undefined on input line 222.
+
+
+LaTeX Warning: Reference `fig:lpfio1' on page 3 undefined on input line 222.
 
 <solpf.png, id=32, 1442.38875pt x 690.32906pt>
 File: solpf.png Graphic file (type png)
  <use solpf.png>
-Package pdftex.def Info: solpf.png used on input line 215.
+Package pdftex.def Info: solpf.png used on input line 228.
 (pdftex.def)             Requested size: 258.0pt x 123.47438pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--229
  [] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <filt_osc2.png, id=33, 803.0pt x 504.88625pt>
 File: filt_osc2.png Graphic file (type png)
  <use filt_osc2.png>
-Package pdftex.def Info: filt_osc2.png used on input line 224.
+Package pdftex.def Info: filt_osc2.png used on input line 237.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <filt_osc4.png, id=34, 803.0pt x 504.88625pt>
 File: filt_osc4.png Graphic file (type png)
  <use filt_osc4.png>
-Package pdftex.def Info: filt_osc4.png used on input line 232.
+Package pdftex.def Info: filt_osc4.png used on input line 245.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
 
 
@@ -946,7 +958,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <filt_osc5.png, id=35, 803.0pt x 504.88625pt>
 File: filt_osc5.png Graphic file (type png)
  <use filt_osc5.png>
-Package pdftex.def Info: filt_osc5.png used on input line 240.
+Package pdftex.def Info: filt_osc5.png used on input line 253.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
 
 
@@ -955,29 +967,32 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <diagram3.png, id=36, 634.37pt x 396.48125pt>
 File: diagram3.png Graphic file (type png)
  <use diagram3.png>
-Package pdftex.def Info: diagram3.png used on input line 253.
+Package pdftex.def Info: diagram3.png used on input line 266.
 (pdftex.def)             Requested size: 258.0pt x 161.2516pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 253--254
+Overfull \hbox (6.0pt too wide) in paragraph at lines 266--267
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./mixer_v2.png> <./mixer_vo.png> <./mixer_fft.png> <./solpf.png> <./filt_os
-c2.png (PNG copy)>] [4 <./filt_osc4.png (PNG copy)> <./filt_osc5.png (PNG copy)
-> <./diagram3.png>] (EE313_Project_V_1_1.aux)
+[3 <./mixer_final2.png> <./mixer_vo3.png> <./mixer_fft3.png>] [4 <./solpf.png> 
+<./filt_osc2.png (PNG copy)> <./filt_osc4.png (PNG copy)> <./filt_osc5.png (PNG
+ copy)> <./diagram3.png>] (EE313_Project_V_1_1.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16581 strings out of 493323
- 316108 string characters out of 3139066
- 374463 words of memory out of 3000000
- 19765 multiletter control sequences out of 15000+200000
- 44136 words of font info for 95 fonts, out of 3000000 for 9000
+ 16583 strings out of 493323
+ 316156 string characters out of 3139066
+ 375465 words of memory out of 3000000
+ 19766 multiletter control sequences out of 15000+200000
+ 45243 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,7n,94p,1143b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -985,13 +1000,14 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on EE313_Project_V_1_1.pdf (4 pages, 470986 bytes).
+/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on EE313_Project_V_1_1.pdf (4 pages, 460005 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

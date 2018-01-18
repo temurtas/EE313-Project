@@ -168,21 +168,21 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.45\unitlength]{mixer_v2.png}
+\includegraphics[width=0.45\unitlength]{mixer_final2.png}
 \caption{\label{fig:mixer}A Mixer Circuit }
 \end{figure}	
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.45\unitlength]{mixer_vo.png}
+\includegraphics[width=0.45\unitlength]{mixer_vo3.png}
 \caption{\label{fig:mixervo} The Output Waveform of the Mixer Circuit }
 \end{figure}	
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
-\includegraphics[width=0.45\unitlength]{mixer_fft.png}
+\includegraphics[width=0.45\unitlength]{mixer_fft3.png}
 \caption{\label{fig:mixerfft} The Output FFT Waveform of the Mixer Circuit }
 \end{figure}	
 
@@ -191,23 +191,36 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 
 
 	Unfortunately, the output signal of mixer does not only carry the frequency difference info but also frequency summation info. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
-	
-\-\\
-
 
 	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
 
-	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}. 	
+	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}. 	\\
+	 
+
 	
-	Doing some KCL at the circuit at S-Domain and setting the expressions in order, the gain and cut-off frequency can be found to be;
+	Doing some KCL at the circuit ,at \textit{Figure~\ref{fig:lpf}}, at S-Domain and setting the expressions in order, the gain and cut-off frequency can be found;
+	
+	
+	$$ \frac{V_a - V_{in}}{R}+\frac{V_a-V_o}{1/sC}+\frac{V_a-Vo/2}{R} ~=~0$$
+	
+	$$ \frac{V_o/2-V_a}{R}+\frac{V0/2}{1/sC} ~=~0	 $$
+	
+	If the expressions are set in order, the gain and cut-off frequency can be found to be;
 	
 	$$ A_V = ~1~+ \frac{R_A}{R_B} $$
 
 	$$	f_c ~=~ \frac{1}{2\pi RC}	$$
 	
-	Assuming capacitance value for desired frequency, resistance values can be determined. 
-	
-	
+	Assuming same resistance and capacitor values for simplicity. The resistance values can be found from there assuming the capacitor values for desired frequency. For 
+	$$~f~=~1~kHz~=~10^3~Hz $$ 
+	$$ \& $$ 
+	$$~C~=~10~nF~=~10^{-8}~F$$
+	Resistance $R$ can be found as
+	$$ R~=\frac{1}{2\pi*10^3*10^{-8}}\approx~16~k\Omega $$
+	$R_A$ \& $R_B$ can be chosen equal to each other and $1~k\Omega$ for the simplicity.
+
+	 Two test the low pass filter in the LTspice, two input signals in \textit{Figure~\ref{fig:lpfio1}} with two different frequency can be applied to the filter. The distorted input \& filtered output waveforms can be seen from \textit{Figure~\ref{fig:lpfio1}}.
+
 
 \begin{figure}[h!]
 	\setlength{\unitlength}{\textwidth}
