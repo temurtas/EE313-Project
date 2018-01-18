@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  18 JAN 2018 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  18 JAN 2018 23:39
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -924,11 +924,11 @@ LaTeX Warning: Reference `fig:lpfio1' on page 3 undefined on input line 222.
 
 LaTeX Warning: Reference `fig:lpfio1' on page 3 undefined on input line 222.
 
-<solpf.png, id=32, 1442.38875pt x 690.32906pt>
-File: solpf.png Graphic file (type png)
- <use solpf.png>
-Package pdftex.def Info: solpf.png used on input line 228.
-(pdftex.def)             Requested size: 258.0pt x 123.47438pt.
+<lpfv2.png, id=32, 724.20563pt x 430.60875pt>
+File: lpfv2.png Graphic file (type png)
+ <use lpfv2.png>
+Package pdftex.def Info: lpfv2.png used on input line 228.
+(pdftex.def)             Requested size: 258.0pt x 153.40266pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 228--229
  [] 
@@ -977,7 +977,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 266--267
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./mixer_final2.png> <./mixer_vo3.png> <./mixer_fft3.png>] [4 <./solpf.png> 
+[3 <./mixer_final2.png> <./mixer_vo3.png> <./mixer_fft3.png>] [4 <./lpfv2.png> 
 <./filt_osc2.png (PNG copy)> <./filt_osc4.png (PNG copy)> <./filt_osc5.png (PNG
  copy)> <./diagram3.png>] (EE313_Project_V_1_1.aux)
 
@@ -1005,7 +1005,7 @@ c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
  Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on EE313_Project_V_1_1.pdf (4 pages, 460005 bytes).
+Output written on EE313_Project_V_1_1.pdf (4 pages, 449765 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
