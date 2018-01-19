@@ -1,0 +1,22 @@
+Circuit: * C:\Users\Erdem\YandexDisk\OKUL\20171\EE313\TermProject\LTSpice\VCO.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by V3.
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Wed Dec 27 21:03:56 2017
+Total elapsed time: 215.234 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 31986885
+traniter = 31986885
+tranpoints = 8238301
+accept = 5815727
+rejected = 2422574
+matrix size = 37
+fillins = 20
+solver = Normal
+Matrix Compiler1: 3.03 KB object code size  1.0/0.4/[0.3]
+Matrix Compiler2: 3.84 KB object code size  0.4/0.5/[0.3]
+

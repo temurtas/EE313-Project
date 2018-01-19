@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.15)  19 JAN 2018 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.15)  20 JAN 2018 00:46
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -852,11 +852,12 @@ Underfull \hbox (badness 2469) in paragraph at lines 62--64
 []\OT1/ptm/m/n/10 Design of a Fre-quency Mod-u-lated Con-tin-u-ous Wave
  []
 
-<VCO_Circuit.png, id=4, 701.019pt x 493.845pt>
-File: VCO_Circuit.png Graphic file (type png)
- <use VCO_Circuit.png>
-Package pdftex.def Info: VCO_Circuit.png used on input line 71.
-(pdftex.def)             Requested size: 232.19843pt x 163.57217pt.
+<VCO_Circuit_FinalModified.png, id=4, 686.565pt x 529.37775pt>
+File: VCO_Circuit_FinalModified.png Graphic file (type png)
+
+<use VCO_Circuit_FinalModified.png>
+Package pdftex.def Info: VCO_Circuit_FinalModified.png used on input line 71.
+(pdftex.def)             Requested size: 232.19843pt x 179.03288pt.
 
 <PowerAmp_Circuit.png, id=6, 641.9985pt x 522.15076pt>
 File: PowerAmp_Circuit.png Graphic file (type png)
@@ -867,7 +868,7 @@ Package pdftex.def Info: PowerAmp_Circuit.png used on input line 82.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <./VCO_Circuit.png> <./PowerAmp_Circuit.png>]
+ <./VCO_Circuit_FinalModified.png> <./PowerAmp_Circuit.png>]
 <micv2.png, id=22, 1008.76875pt x 642.90187pt>
 File: micv2.png Graphic file (type png)
  <use micv2.png>
@@ -879,6 +880,9 @@ File: mic_osc.png Graphic file (type png)
  <use mic_osc.png>
 Package pdftex.def Info: mic_osc.png used on input line 124.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <triangular.png, id=24, 403.5075pt x 428.60126pt>
 File: triangular.png Graphic file (type png)
@@ -989,8 +993,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  16583 strings out of 493323
- 316156 string characters out of 3139065
- 375465 words of memory out of 3000000
+ 316226 string characters out of 3139065
+ 375463 words of memory out of 3000000
  19766 multiletter control sequences out of 15000+200000
  45243 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1005,7 +1009,7 @@ c/amsfonts/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
  Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><D:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on EE313_Project_V_1_1.pdf (4 pages, 449765 bytes).
+Output written on EE313_Project_V_1_1.pdf (4 pages, 448039 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
