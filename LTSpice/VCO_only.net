@@ -1,0 +1,23 @@
+* C:\Users\Erdem\Documents\GitHub\EE313-Project\LTSpice\VCO_only.asc
+Vnsupply1 -V 0 -12
+Vpsupply1 +V 0 12
+R1 N001 V_InputTri 5K
+C1 V_ModTri N001 5n
+R2 N004 V_InputTri 5K
+R3 0 N004 5k
+R6 N003 N005 10k
+R7 0 N005 5k
+V_InputTri1 V_InputTri 0 PULSE(0.75 4.5 0 0.05 0.05 0 0.1)
+XU1 N004 N001 +V -V V_ModTri LM318
+XU2 N005 V_ModTri +V -V N003 LM318
+Vpsupply2 ++V 0 6
+R5 NC_01 ++V 220k
+M1 N002 N003 0 0 2N7002
+R4 N002 N001 2.5k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Erdem\Documents\LTspiceXVII\lib\cmp\standard.mos
+.inc LM318.txt
+.tran 0 9.1 9 1m uic
+.backanno
+.end

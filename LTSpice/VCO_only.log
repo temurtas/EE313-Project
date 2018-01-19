@@ -1,115 +1,21 @@
-Circuit: * C:\Users\Erdem\YandexDisk\OKUL\20171\EE313\TermProject\LTSpice\VCO_only.asc
+Circuit: * C:\Users\Erdem\Documents\GitHub\EE313-Project\LTSpice\VCO_only.asc
 
+WARNING: Less than two connections to node NC_01.  This node is used by R5.
 Per .tran options, skipping operating point for transient analysis.
-Changing Tseed to 1e-008
-Changing Tseed to 1e-010
-Changing Tseed to 1e-007
-Changing Tseed to 1e-011
-Changing Tseed to 1e-006
-Changing Tseed to 1e-012
-Changing Tseed to 1e-005
-Changing Tseed to 1e-013
-Changing Tseed to 0.0001
-Changing Tseed to 1e-014
-Changing Tseed to 0.001
-Changing Tseed to 1e-015
-Heightened Def Con from 0 Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-Changing Tseed to 1e-015
-Changing Tseed to 0.0001
-Changing Tseed to 1e-016
-+Changing Tseed to 1e-009
-Changing Tseed to 1e-011
-Changing Tseed to 1e-008
-Changing Tseed to 1e-012
-Changing Tseed to 1e-007
-Changing Tseed to 1e-013
-Changing Tseed to 1e-006
-Changing Tseed to 1e-014
-Changing Tseed to 1e-005
-to 1.002e-005
 
-Date: Wed Jan 03 21:44:42 2018
-Total elapsed time: 376.747 seconds.
+Date: Sat Jan 20 01:23:40 2018
+Total elapsed time: 381.835 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 42563956
-traniter = 42563956
-tranpoints = 10012621
-accept = 7164683
-rejected = 2847852
-matrix size = 62
-fillins = 147
+totiter = 44761210
+traniter = 44761210
+tranpoints = 11149795
+accept = 8027485
+rejected = 3122310
+matrix size = 64
+fillins = 146
 solver = Normal
-Matrix Compiler1: 11.29 KB object code size  8.2/3.9/[2.4]
-Matrix Compiler2: 7.82 KB object code size  2.8/3.3/[1.7]
-
+Matrix Compiler1:     613 opcodes  2.2/[1.0]/1.0
+Matrix Compiler2: off
