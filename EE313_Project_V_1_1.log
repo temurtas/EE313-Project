@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  20 JAN 2018 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  21 JAN 2018 00:06
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -731,6 +731,15 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `fig:lpfvo2' multiply defined.
 
+
+LaTeX Warning: Label `fig:lpfvo2' multiply defined.
+
+
+LaTeX Warning: Label `fig:lpfvo2' multiply defined.
+
+
+LaTeX Warning: Label `fig:lpfvo2' multiply defined.
+
 )
 \openout1 = `EE313_Project_V_1_1.aux'.
 
@@ -951,130 +960,158 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <triangular.png, id=40, 403.5075pt x 428.60126pt>
 File: triangular.png Graphic file (type png)
  <use triangular.png>
-Package pdftex.def Info: triangular.png used on input line 213.
+Package pdftex.def Info: triangular.png used on input line 212.
 (pdftex.def)             Requested size: 129.0pt x 137.0244pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<mixer_v2_2.png, id=41, 697.10437pt x 689.57625pt>
+ [3 <./PowerAmp_speakerOutput.png> <./PowerAmp_Circuit_dcParameters.png> <./mic
+_v2.png> <./mic_osc.png (PNG copy)> <./triangular.png>]
+<mixer_v2_2.png, id=47, 697.10437pt x 689.57625pt>
 File: mixer_v2_2.png Graphic file (type png)
  <use mixer_v2_2.png>
-Package pdftex.def Info: mixer_v2_2.png used on input line 223.
+Package pdftex.def Info: mixer_v2_2.png used on input line 226.
 (pdftex.def)             Requested size: 232.19843pt x 229.68631pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<mixer_op3.png, id=42, 718.18312pt x 691.08188pt>
+<mixer_op3.png, id=48, 718.18312pt x 691.08188pt>
 File: mixer_op3.png Graphic file (type png)
  <use mixer_op3.png>
-Package pdftex.def Info: mixer_op3.png used on input line 230.
+Package pdftex.def Info: mixer_op3.png used on input line 251.
 (pdftex.def)             Requested size: 232.19843pt x 223.439pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<mixer_fft3.png, id=43, 695.59875pt x 691.08188pt>
+<mixer_fft3.png, id=49, 695.59875pt x 691.08188pt>
 File: mixer_fft3.png Graphic file (type png)
  <use mixer_fft3.png>
-Package pdftex.def Info: mixer_fft3.png used on input line 237.
+Package pdftex.def Info: mixer_fft3.png used on input line 258.
 (pdftex.def)             Requested size: 232.19843pt x 230.68344pt.
 
+<mixer_osc1.png, id=50, 803.0pt x 504.88625pt>
+File: mixer_osc1.png Graphic file (type png)
+ <use mixer_osc1.png>
+Package pdftex.def Info: mixer_osc1.png used on input line 266.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./PowerAmp_speakerOutput.png> <./PowerAmp_Circuit_dcParameters.png> <./mic_
-v2.png> <./mic_osc.png (PNG copy)>]
+<mixer_osc2.png, id=51, 803.0pt x 504.88625pt>
+File: mixer_osc2.png Graphic file (type png)
+ <use mixer_osc2.png>
+Package pdftex.def Info: mixer_osc2.png used on input line 274.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
 
-LaTeX Warning: Text page 4 contains only floats.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[4 <./mixer_v2_2.png> <./mixer_op3.png> <./mixer_fft3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-[4 <./triangular.png> <./mixer_v2_2.png> <./mixer_op3.png> <./mixer_fft3.png>]
 
-LaTeX Warning: Reference `fig:lpfio1' on page 5 undefined on input line 274.
+LaTeX Warning: Reference `fig:lpfio1' on page 5 undefined on input line 312.
 
 
-LaTeX Warning: Reference `fig:lpfio1' on page 5 undefined on input line 274.
+LaTeX Warning: Reference `fig:lpfio1' on page 5 undefined on input line 312.
 
-<lpf_v2.png, id=53, 724.20563pt x 430.60875pt>
+<lpf_v2.png, id=55, 724.20563pt x 430.60875pt>
 File: lpf_v2.png Graphic file (type png)
  <use lpf_v2.png>
-Package pdftex.def Info: lpf_v2.png used on input line 280.
+Package pdftex.def Info: lpf_v2.png used on input line 318.
 (pdftex.def)             Requested size: 258.0pt x 153.40266pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 280--281
- [] 
- []
-
-<lpf_osc2.png, id=54, 803.0pt x 504.88625pt>
-File: lpf_osc2.png Graphic file (type png)
- <use lpf_osc2.png>
-Package pdftex.def Info: lpf_osc2.png used on input line 289.
-(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
-
-<lpf_osc4.png, id=55, 803.0pt x 504.88625pt>
-File: lpf_osc4.png Graphic file (type png)
- <use lpf_osc4.png>
-Package pdftex.def Info: lpf_osc4.png used on input line 297.
-(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<lpf_osc5.png, id=56, 803.0pt x 504.88625pt>
-File: lpf_osc5.png Graphic file (type png)
- <use lpf_osc5.png>
-Package pdftex.def Info: lpf_osc5.png used on input line 305.
-(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<diagram3.png, id=57, 634.37pt x 396.48125pt>
-File: diagram3.png Graphic file (type png)
- <use diagram3.png>
-Package pdftex.def Info: diagram3.png used on input line 318.
-(pdftex.def)             Requested size: 258.0pt x 161.2516pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 318--319
  [] 
  []
 
+<lpf_osc2.png, id=56, 803.0pt x 504.88625pt>
+File: lpf_osc2.png Graphic file (type png)
+ <use lpf_osc2.png>
+Package pdftex.def Info: lpf_osc2.png used on input line 327.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
+<lpf_osc4.png, id=57, 803.0pt x 504.88625pt>
+File: lpf_osc4.png Graphic file (type png)
+ <use lpf_osc4.png>
+Package pdftex.def Info: lpf_osc4.png used on input line 335.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./lpf_v2.png> <./lpf_osc2.png (PNG copy)> <./lpf_osc4.png (PNG copy)> <./lp
-f_osc5.png (PNG copy)> <./diagram3.png>]
+<lpf_osc5.png, id=58, 803.0pt x 504.88625pt>
+File: lpf_osc5.png Graphic file (type png)
+ <use lpf_osc5.png>
+Package pdftex.def Info: lpf_osc5.png used on input line 343.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<lpf_op3.png, id=59, 707.64375pt x 683.55376pt>
+File: lpf_op3.png Graphic file (type png)
+ <use lpf_op3.png>
+Package pdftex.def Info: lpf_op3.png used on input line 351.
+(pdftex.def)             Requested size: 232.19843pt x 224.29053pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<lpf_op4.png, id=60, 718.18312pt x 683.55376pt>
+File: lpf_op4.png Graphic file (type png)
+ <use lpf_op4.png>
+Package pdftex.def Info: lpf_op4.png used on input line 359.
+(pdftex.def)             Requested size: 232.19843pt x 221.00502pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: lpf_op4.png Graphic file (type png)
+<use lpf_op4.png>
+Package pdftex.def Info: lpf_op4.png used on input line 367.
+(pdftex.def)             Requested size: 232.19843pt x 221.00502pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<diagram3.png, id=61, 634.37pt x 396.48125pt>
+File: diagram3.png Graphic file (type png)
+ <use diagram3.png>
+Package pdftex.def Info: diagram3.png used on input line 379.
+(pdftex.def)             Requested size: 258.0pt x 161.2516pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 379--380
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./mixer_osc1.png (PNG copy)> <./mixer_osc2.png (PNG copy)> <./lpf_v2.png> <
+./lpf_osc2.png (PNG copy)>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 []\OT1/ptm/m/n/8 \LF353 Datasheet." [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 []\OT1/ptm/m/n/8 \2N7000 Datasheet." [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 \OT1/ptm/m/n/8 https://www.onsemi.com/pub/Collateral/2N7000-D.PDF. [Ac-cessed:
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+[6 <./lpf_osc4.png (PNG copy)> <./lpf_osc5.png (PNG copy)> <./lpf_op3.png> <./l
+pf_op4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 []\OT1/ptm/m/n/8 \LF353 Datasheet." [On-line]. Avail-able:
  []
 
-[6
+[7
 
-] (EE313_Project_V_1_1.aux)
+ <./diagram3.png>] (EE313_Project_V_1_1.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1083,10 +1120,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16892 strings out of 493323
- 320468 string characters out of 3139066
- 375590 words of memory out of 3000000
- 20064 multiletter control sequences out of 15000+200000
+ 16914 strings out of 493323
+ 320824 string characters out of 3139066
+ 376606 words of memory out of 3000000
+ 20082 multiletter control sequences out of 15000+200000
  46321 words of font info for 97 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,94p,1884b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1102,9 +1139,9 @@ iles/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on EE313_Project_V_1_1.pdf (6 pages, 679004 bytes).
+Output written on EE313_Project_V_1_1.pdf (7 pages, 858627 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
