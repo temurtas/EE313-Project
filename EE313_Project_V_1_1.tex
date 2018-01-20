@@ -93,7 +93,7 @@ In this project, it is aimed to design a frequency modulated continuous wave (FM
 	\caption{VCO Outputs for 1kHz.}
 	\label{fig:VCOFor1kHz}
 \end{figure}
-Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be .able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges through $R_{4}$, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
+Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges through $R_{4}$, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
 
 \begin{figure}[t!]
 	\centering
@@ -215,8 +215,8 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	
 	We also know that the distance between source and receiver causes a time delay proportional to the distance for the received signal in comparison to the transmitted signal. Thanks to triangular wave and the voltage controlled oscillator we used at the beginning of the project, the distance between the source and receiver is also proportional to the the frequency difference between original source signal and received signal by receiver. This can be understood from the basic principle of VCO. Assume that the first signal left the VCO and entered the mixer at Time 0 and has a frequency $f_1$ proportional to the magnitude of triangular wave at Time 0. Similarly second signal entered the Mixer at Time 1 and has a frequency $f_2$ proportional to the magnitude of triangular wave at Time 1. One period of the input triangular wave and "Time 0" \& "Time 1" on top of it can be seen at \textit{Figure~\ref{fig:trimix}}. 
 	
-	Therefore, the time shift "$Time~1~-~Time~0$" is proportional to the "$|~f_2~f_1~|$". Thus, if we can find the frequency difference between this signal, we can easily find the desired distance since the distance can be found by
-	$$ d~=~(Time~1~-~Time~0)*v_s~=~K*|~f_1~-~f_2~|$$ 
+	Therefore, the time shift "$~Time~1-Time~0~$" is proportional to the "$|~f_2-f_1~|$". Thus, if we can find the frequency difference between this signal, we can easily find the desired distance since the distance can be found by
+	$$ d~=~(Time~1-Time~0)*v_s~=~K*|~f_1-f_2~|$$ 
 	where K is a constant and $v_s$ is the speed of sound.
 	
 	
@@ -239,18 +239,26 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	$$	K~=~4.2875*10^{-3}~meter	$$	
 	and the distance measured can be found as 
 	$$	d_{measured}~=~K*f_B~=~4.2875*f_B*10^{-3}~meter	$$	
-	
+	where $f$ and $f_B$ are the unitless numerical values of the frequency difference.
 	
 	
 	For that reasons, a mixer circuit is a very crucial part of our project to be designed. A basic mixer circuit we have used can be seen at \textit{Figure~\ref{fig:mixer}}.
-	
+
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
 \center 
 \includegraphics[width=0.45\unitlength]{mixer_op3.png}
-\caption{\label{fig:mixervo} The Output Waveform of the Mixer Circuit }
+\caption{\label{fig:mixerop} The Output Waveform of the Mixer Circuit }
 \end{figure}	
+
+	
+	To test our design, we have used LTSpice for simulations. Applying two sinusoidal inputs from $33k\Omega$ resistor with $1~kHz$ frequency \& $1.8~kHz$ frequency, we observed the output waveform at the \textit{Figure~\ref{fig:mixerop}}. To understand whether it works or not, the 'FFT Spectrum Analysis' was used. As can be seen from the \textit{Figure~\ref{fig:mixerfft}}, we have observed impulses at input frequencies, at difference frequency , at total frequency and their second and higher harmonics. Since we would use low-pass filter after the mixer, we were not worried about the higher order harmonic since they would be eliminated at the output anyway. 
+
+	To test the design at the laboratory, we have used similar methods. By using two signal generators, we supplied the mixer circuit with two sinusoidal signal with different frequencies. The output waveform after that procedure can be seen at \textit{Figure~\ref{fig:mixerosc1}}.
+	
+	After finding the proper mixer circuit, the only step-back from measuring the measuring the distance was designing a proper low pass filter. Since we wanted the filter to have sharp frequency response we have used second order low pass filter. The following section will explain the design steps of the filter.   
+
 
 \begin{figure}[h!]
 \setlength{\unitlength}{\textwidth}
@@ -268,12 +276,12 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \end{figure}	
 
 
-\begin{figure}[h!]
-\setlength{\unitlength}{\textwidth}
-\center 
-\includegraphics[width=0.45\unitlength]{mixer_osc2.png}
-\caption{\label{fig:mixerosc2} The Practical Output Waveform of the Mixer Circuit }
-\end{figure}	
+%\begin{figure}[h!]
+%\setlength{\unitlength}{\textwidth}
+%\center 
+%\includegraphics[width=0.45\unitlength]{mixer_osc2.png}
+%\caption{\label{fig:mixerosc2} The Practical Output Waveform of the Mixer Circuit }
+%\end{figure}	
 
 		
 				
