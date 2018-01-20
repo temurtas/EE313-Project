@@ -1,21 +1,28 @@
 Circuit: * C:\Users\Erdem\Documents\GitHub\EE313-Project\LTSpice\VCO_only.asc
 
-WARNING: Less than two connections to node NC_01.  This node is used by R5.
 Per .tran options, skipping operating point for transient analysis.
+Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
 
-Date: Sat Jan 20 01:23:40 2018
-Total elapsed time: 381.835 seconds.
+Date: Sat Jan 20 16:05:03 2018
+Total elapsed time: 229.592 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 44761210
-traniter = 44761210
-tranpoints = 11149795
-accept = 8027485
-rejected = 3122310
-matrix size = 64
-fillins = 146
+totiter = 32496197
+traniter = 32496197
+tranpoints = 8180941
+accept = 5663781
+rejected = 2517153
+matrix size = 59
+fillins = 122
 solver = Normal
-Matrix Compiler1:     613 opcodes  2.2/[1.0]/1.0
-Matrix Compiler2: off
+Matrix Compiler1: 10.08 KB object code size  1.9/0.9/[0.6]
+Matrix Compiler2: 7.15 KB object code size  0.7/0.8/[0.4]
+

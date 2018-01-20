@@ -71,10 +71,45 @@ Aim: In this project, you are going to design a distance measurement system as d
  \includegraphics[width=0.45\unitlength]{VCO_Circuit_FinalModified}
  \caption{\label{fig:VCO_Circuit}The Voltage Controlled Oscillator Circuit}
 \end{figure}
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{scope_28_SimResult}
+		\caption{Theoretical Output of VCO.}
+		\label{fig:VCOFor1kHzTheoretical}
+	\end{subfigure}%
+	\newline
+	\begin{subfigure}{.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{scope_28}
+		\caption{Practical Output of VCO.}
+		\label{fig:VCOFor1kHzPractical}
+	\end{subfigure}
+	\caption{VCO Outputs for 1kHz.}
+	\label{fig:VCOFor1kHz}
+\end{figure}
+Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be .able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges through $R_{4}$, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
 
-Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be .able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
-
-To handle these frequent voltage changes, a high slew rate LF353 opamps are used. Also for biasing purposes, a N-MOS with low open voltage provides lower DC offset at the input $V_{InputTri}$. 2N7000 model N-MOS suits for this application
+\begin{figure}[t!]
+	\centering
+	\begin{subfigure}{.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{scope_24_SimResult}
+		\caption{Theoretical Output of VCO.}
+		\label{fig:VCOFor5kHzTheoretical}
+	\end{subfigure}%
+	\newline
+	\begin{subfigure}{.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{scope_24}
+		\caption{Practical Output of VCO.}
+		\label{fig:VCOFor5kHzPractical}
+	\end{subfigure}
+	\caption{VCO Outputs for 5kHz.}
+	\label{fig:VCOFor5kHz}
+\end{figure}
+To handle these frequent voltage changes, high slew rated LF353\cite{b1} opamps are used. Also for biasing purposes, a N-MOS with low open voltage provides lower DC offset at the input $V_{InputTri}$. 2N7000\cite{b2} model N-MOS suits for this application. Simulation and theoretical results for two corner frequencies are presented in \textit{Figure~\ref{fig:VCOFor1kHz}} and \textit{Figure~\ref{fig:VCOFor5kHz}}. VCO outputs are revealed as expected in theoretical results.
 
 
 \subsection{Power Amplifier and Speaker}
@@ -88,7 +123,7 @@ This part is aimed to transmit the frequency modulated signal, which is the outp
 
 The main transistor of common emitter driver is $BDN_{1}$. This transistor sets the DC biasing of $BDN_{2}$ and $BDP_{1}$. It may be considered as a current source. Also, the input signal is output as inversely polarized at the collector of the $BDN_{1}$.
 
-The class AB amplifier mainly consists of two transistors one of which is a NPN and the other is PNP. The diodes $D_{1}$ and $D_{2}$ are to provide Q point stability of the transistors. Also they provide constant voltage difference between the bases of $BDN_{2}$ and $BDP_{1}$. When the voltage in positive cycle, $BDN_{2}$ amplifies the signal whereas $BDP_{1}$ amplifies the signal in negative cycle. These transistors operate cooperatively according to the cycle of the signal. Lastly, feedback resistor $R_{1}$ reduces the distortion of the output signal by introducing a negative feedback to the input signal in shung-shunt topology. On the other hand, the DC biasing of $BDN_{1}$ is improvd with the use of $R_{1}$.
+The class AB amplifier mainly consists of two transistors one of which is a NPN and the other is PNP. The diodes $D_{1}$ and $D_{2}$ are to provide Q point stability of the transistors. Also they provide constant voltage difference between the bases of $BDN_{2}$ and $BDP_{1}$. When the voltage in positive cycle, $BDN_{2}$ amplifies the signal whereas $BDP_{1}$ amplifies the signal in negative cycle. These transistors operate cooperatively according to the cycle of the signal. Lastly, feedback resistor $R_{1}$ reduces the distortion of the output signal by introducing a negative feedback to the input signal in shung-shunt topology. On the other hand, the DC biasing of $BDN_{1}$ is improved with the use of $R_{1}$.
 
 
 \section{Receiver}
@@ -278,13 +313,15 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
  
 
 
-%\begin{thebibliography}{00}
-%\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+\begin{thebibliography}{00}
+\bibitem{b1} “LF353 Datasheet.” [Online]. Available: http://www.ti.com/lit/ds/symlink/lf353-n.pdf. [Accessed: 20-Jan-2018].
+\bibitem{b2} “2N7000 Datasheet.” [Online]. Available: https://www.onsemi.com/pub/Collateral/2N7000-D.PDF. [Accessed: 20-Jan-2018].
 %\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 %\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
 %\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
 %\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., inpress.
 %\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.%\end{thebibliography}
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\end{thebibliography}
 
 \end{document}
