@@ -75,6 +75,9 @@ In this project, it is aimed to design a frequency modulated continuous wave (FM
  \includegraphics[width=0.45\unitlength]{VCO_Circuit_FinalModified}
  \caption{\label{fig:VCO_Circuit}The Voltage Controlled Oscillator Circuit}
 \end{figure}
+
+
+	Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges through $R_{4}$, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
 \begin{figure}[h!]
 	\centering
 	\begin{subfigure}{.48\textwidth}
@@ -94,8 +97,7 @@ In this project, it is aimed to design a frequency modulated continuous wave (FM
 	\label{fig:VCOFor1kHz}
 \end{figure}
 
-	Voltage controlled oscillator (VCO) is a voltage-to-frequency mapper. VCO outputs variable frequency voltage as the input voltage changes. The used VCO circuit in this project can be seen in \textit{Figure~\ref{fig:VCO_Circuit}}. To be able to generate frequency modulated signal that is the basic function of VCO, the main input to the circuit is a triangular wave. The triangular wave provides varying input voltage so that output frequency changes gradually. The modulated triangular wave is observed at the $V_{ModTri}$ node. Charging and discharging phenomena of capacitor $C_{1}$ is the main reason of the oscillation at the $V_{ModTri}$ node. While capacitor charges, modulated wave climbs down and as capacitor discharges through $R_{4}$, modulated wave climbs up. Capacitor charging-discharging cycles do effect the output frequency, however, are not the real reason of modulated triangular wave at the $V_{ModTri}$ node. If there were a constant DC input, the output would be just an oscillating triangular wave with a certain frequency. The main reason for modulated frequency is the changing input voltage. The output frequency depends on three factors. The first one is the capacitance. As capacitance of $C_{1}$ increases, the ability of holding charge of the capacitor increases. This results in longer cycles meaning lower frequency at the $V_{ModTri}$ node. Secondly, the resistance $R_{1}$ sets a barrier for current flow through $C_{1}$. In other words, as $R_{1}$ increases, the time for $C_{1}$ to charge up becomes longer. Hence longer wave cycles are observed again. Third and last factor is the input voltage value. A higher input voltage implies higher current through $C_{1}$. Thus, the time for $C_{1}$ to charge up becomes shorter. As a result, higher frequencied cycles are observed at the $V_{ModTri}$ node.
-
+To handle these frequent voltage changes, high slew rated LF353\cite{b2} opamps are used. Also for biasing purposes, a N-MOS with low open voltage provides lower DC offset at the input $V_{InputTri}$. 2N7000\cite{b3} model N-MOS suits for this application. Simulation and theoretical results for two corner frequencies are presented in \textit{Figure~\ref{fig:VCOFor1kHz}} and \textit{Figure~\ref{fig:VCOFor5kHz}}. VCO outputs are revealed as expected in theoretical results. The resistor and capacitor values are chosen initially by observing examples on websites\cite{b4} and later by trial and error. The ratio of $\frac{R_{5}}{R_{5}+R_{6}}$, which is the threshold voltage of the Schmitt Trigger represented with $U_{2}$, sets the peak voltage of the $V_{ModTri}$. This voltage is $\sim6V$ in our design.
 \begin{figure}[t!]
 	\centering
 	\begin{subfigure}{.48\textwidth}
@@ -114,9 +116,8 @@ In this project, it is aimed to design a frequency modulated continuous wave (FM
 	\caption{VCO Outputs for 5kHz.}
 	\label{fig:VCOFor5kHz}
 \end{figure}
-To handle these frequent voltage changes, high slew rated LF353\cite{b2} opamps are used. Also for biasing purposes, a N-MOS with low open voltage provides lower DC offset at the input $V_{InputTri}$. 2N7000\cite{b3} model N-MOS suits for this application. Simulation and theoretical results for two corner frequencies are presented in \textit{Figure~\ref{fig:VCOFor1kHz}} and \textit{Figure~\ref{fig:VCOFor5kHz}}. VCO outputs are revealed as expected in theoretical results. The resistor and capacitor values are chosen initially by observing examples on websites\cite{b4} and later by trial and error. The ratio of $\frac{R_{5}}{R_{5}+R_{6}}$, which is the threshold voltage of the Schmitt Trigger represented with $U_{2}$, sets the peak voltage of the $V_{ModTri}$. This voltage is $\sim6V$ in our design.
 \subsection{Power Amplifier and Speaker}
-\begin{figure}[t!]
+\begin{figure}[b!]
  \setlength{\unitlength}{\textwidth}
  \center 
  \includegraphics[width=0.45\unitlength]{PowerAmp_Circuit_FinalModified}
@@ -299,7 +300,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\caption{\label{fig:pslpf}A Passive Second Order Low-Pass Filter }
 \end{figure} 	
 	
-	Low Pass Filters are the type of filters that passes the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. Low pass filter can be categorized by their included capacitor number. For instance, if one low pass filter includes only one capacitor and resistor, it can be named as first order low pass filter. Similarly, a filter with two capacitor can be considered as second order low pass filter. In our design we preferred to use a second order low pass filter in order to get sharp enough frequency response. A basic second order low-pass filter can be seen at \textit{Figure~\ref{fig:pslpf}} \\ 
+	Low pass filters are the type of filters that pass the signals having the frequencies lower than the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. Low pass filters can be categorized by their included capacitor number. For instance, if one low pass filter includes only one capacitor and resistor, it can be named as first order low pass filter. Similarly, a filter with two capacitor can be considered as second order low pass filter. In our design we preferred to use a second order low pass filter in order to get sharp enough frequency response. A basic second order low-pass filter can be seen at \textit{Figure~\ref{fig:pslpf}} \\ 
 	
 	Low pass filters can also be categorized into two main type that are active filters and passive filters. Active filters are the ones that can amplify the desired signals and eliminate otherwise. These type of filters generally includes an op-amp for that purpose.  A simple active second order low-pass filter can be seen at \textit{Figure~\ref{fig:lpf}}. Whereas the passive low pass filters can only supply desired output signal with maximum unity gain. A general passive second order low-pass filter can be seen at \textit{Figure~\ref{fig:pslpf}}.  		 
 
@@ -386,26 +387,11 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\includegraphics[width=0.45\unitlength]{lpf_osc2.png}
 	\caption{\label{fig:lpfosc2}Practical Output Signal for 16 kHz}
 \end{figure} 
-
-		
-\section{General Diagram}
-
-	General diagram of the project can be seen at \textit{Figure~\ref{fig:diagram}}.
-
-\begin{figure}[h!]
-\setlength{\unitlength}{\textwidth}
-\center 
-\includegraphics[width=0.5\unitlength]{diagram3.png}
-\caption{\label{fig:diagram}General Diagram of the Project }
-\end{figure}	
-
-\vfill
-\-\\[2cm]
 		
 \section{Overall Project}
 
 
-	Overall project built at the laboratory can be seen at \textit{Figure~\ref{fig:overall}}.
+	Overall project built at the laboratory on breadboard which has a schematic representation in \textit{Figure~\ref{fig:diagram_Final}} can be seen at \textit{Figure~\ref{fig:overall}}.
 
 \begin{figure*}[h!]
 \setlength{\unitlength}{\textwidth}
@@ -413,9 +399,6 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \includegraphics[width=1.0\unitlength]{overall_cct2.jpg}
 \caption{\label{fig:overall}Overall Project }
 \end{figure*}	
-
-
-
 
 \section{Conclusion}
 
