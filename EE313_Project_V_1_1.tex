@@ -336,7 +336,9 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\caption{\label{fig:lpf}An Active Second Order Low-Pass Filter }
 \end{figure} 
 	
-	\-\\ \-\\ \-\- To test the filter at dasjbdjasdjasvdjhavsdjgasvdjgasvdjgawvjgdjgadjaewjd 
+	To test the design of the low pass filter, firstly LTSpice was used as a simulation tool. As can be seen from the \textit{Figure~\ref{fig:pslpf}}, a voltage input applied as an input and output is observed. For three different sinusoidal input, the input and output waveforms can be seen at \textit{Figures~\ref{fig:lpfop3}, \ref{fig:lpfop4}, \ref{fig:lpfop5}}. 
+	
+	Similar methodology was used at the laboratory. By giving sinusoidal inputs with different frequencies from signal generator, the outputs were observed through oscilloscope. The \textit{Figures~\ref{fig:lpfosc2}, \ref{fig:lpfosc4} and \ref{fig:lpfosc5}} shows the input and output waveforms for the low pass filter having approximately $4~kHz$ cutoff frequency that we designed earlier at the design step. Unfortunately, we forgot to take similar screenshots for the latest version of our filter.
 	
 	
 \begin{figure}[H]
@@ -369,7 +371,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.45\unitlength]{lpf_osc4.png}
-	\caption{\label{fig:lpfosc4}Practical Output Signal for 2.5 kHz}
+	\caption{\label{fig:lpfosc4}Practical Input \& Output Signal for 2.5 kHz}
 \end{figure} 
 	
 
@@ -377,7 +379,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.45\unitlength]{lpf_osc5.png}
-	\caption{\label{fig:lpfosc5}Practical Output Signal for 3.5 kHz}
+	\caption{\label{fig:lpfosc5}Practical Input \& Output Signal for 3.5 kHz}
 \end{figure} 
 		
 
@@ -385,13 +387,15 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.45\unitlength]{lpf_osc2.png}
-	\caption{\label{fig:lpfosc2}Practical Output Signal for 16 kHz}
+	\caption{\label{fig:lpfosc2}Practical Input \& Output Signal for 16 kHz}
 \end{figure} 
+
+\-\\[0.5cm]
 		
 \section{Overall Project}
 
 
-	Overall project built at the laboratory on breadboard which has a schematic representation in \textit{Figure~\ref{fig:diagram_Final}} can be seen at \textit{Figure~\ref{fig:overall}}.
+	Overall project built at the laboratory on breadboard which has a schematic representation in \textit{Figure~\ref{fig:diagram_Final}} can be seen at \textit{Figure~\ref{fig:overall}}. \\[7cm]
 
 \begin{figure*}[h!]
 \setlength{\unitlength}{\textwidth}
@@ -402,7 +406,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 
 \section{Conclusion}
 
-	First, a triangular voltage is generated with varying frequencies by a VCO circuit and 10 Hz triangular wave input. Then modulated triangular wave is sent to microphone by a speaker and to mixer at the same time. The microphone transmits the captured signal to the mixer. In the mixer, there are two equivalent inputs but with a phase shift. Output of the mixer is basically sum of two waves having frequencies $ (f_1+f_2)$ and $(|~f_1 -f_2~|) $ that are frequencies of two inputs of the mixer. If this signal is low-passed, the filtered signal have $(|~f_1 -f_2~|) $ frequency. By measuring $(|~f_1 -f_2~|) $, the distance between the speaker and the microphone can be found by a simple algebra, $K*(|~f_1 -f_2~|) $ where K is a constant to be determined and having unit of $\frac{Meter}{Hertz} $.
+	Firstly, by using the 10 Hz triangular input from signal generator as an input, a triangular wave with varying frequency was generated with voltage controlled oscillator. This modulated triangular wave had a frequency varying between $1~kHz$ and $5~kHz$. Then, this signal is sent to a speaker by amplifying it through a power amplifier we designed. Unfortunately this amplifier failed to do its job at the laboratory. The same signal from the VCO also sent as a first input of the mixer circuit. In the second part of our project, the sound signal sent through $8\Omega$ speaker was received by the electret microphone and converted to a meaningful voltage by microphone driver circuit. This voltage signal was used as a second input signal for the mixer circuit we designed. Therefore, there are two inputs with a phase shift to be mixed. The signal at the output of the mixer actually consisted of two distinct signal with two different frequency. One of these signal had a frequency that equals to the sum of two input signals' frequencies in other words $ (f_1+f_2)$ and other signal had a frequency that equals to the difference between the frequencies of the input signals that is $(|~f_1 -f_2~|) $ . Since we were interested in only the frequency difference info, a second order low pass filter was used. By observing the signal at the output of low pass filter, we can measure the frequency difference $(|~f_1 -f_2~|) $. Thus, the distance between the speaker and the microphone can be found by simply multiplying that difference with a constant $'K'$ that we calculated at this report.
 
  
 
