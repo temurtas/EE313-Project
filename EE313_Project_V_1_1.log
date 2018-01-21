@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  21 JAN 2018 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.28)  21 JAN 2018 20:17
 entering extended mode
 **./EE313_Project_V_1_1.tex
 (EE313_Project_V_1_1.tex
@@ -1025,8 +1025,8 @@ File: lpf_op4.png Graphic file (type png)
 Package pdftex.def Info: lpf_op4.png used on input line 352.
 (pdftex.def)             Requested size: 232.19843pt x 221.00502pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <lpf_op5.png, id=61, 718.18312pt x 683.55376pt>
 File: lpf_op5.png Graphic file (type png)
@@ -1034,100 +1034,95 @@ File: lpf_op5.png Graphic file (type png)
 Package pdftex.def Info: lpf_op5.png used on input line 360.
 (pdftex.def)             Requested size: 232.19843pt x 221.00502pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<lpf_osc2.png, id=62, 803.0pt x 504.88625pt>
-File: lpf_osc2.png Graphic file (type png)
- <use lpf_osc2.png>
-Package pdftex.def Info: lpf_osc2.png used on input line 371.
-(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<lpf_osc4.png, id=63, 803.0pt x 504.88625pt>
+<lpf_osc4.png, id=62, 803.0pt x 504.88625pt>
 File: lpf_osc4.png Graphic file (type png)
  <use lpf_osc4.png>
-Package pdftex.def Info: lpf_osc4.png used on input line 379.
+Package pdftex.def Info: lpf_osc4.png used on input line 370.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<lpf_osc5.png, id=64, 803.0pt x 504.88625pt>
+<lpf_osc5.png, id=63, 803.0pt x 504.88625pt>
 File: lpf_osc5.png Graphic file (type png)
  <use lpf_osc5.png>
-Package pdftex.def Info: lpf_osc5.png used on input line 387.
+Package pdftex.def Info: lpf_osc5.png used on input line 378.
+(pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
+ [6 <./lpf_v2.png> <./lpf_op3.png> <./lpf_op4.png> <./lpf_op5.png> <./lpf_osc4.
+png (PNG copy)>] <lpf_osc2.png, id=67, 803.0pt x 504.88625pt>
+File: lpf_osc2.png Graphic file (type png)
+ <use lpf_osc2.png>
+Package pdftex.def Info: lpf_osc2.png used on input line 386.
 (pdftex.def)             Requested size: 232.19843pt x 145.98953pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<diagram3.png, id=65, 634.37pt x 396.48125pt>
+<diagram3.png, id=68, 634.37pt x 396.48125pt>
 File: diagram3.png Graphic file (type png)
  <use diagram3.png>
-Package pdftex.def Info: diagram3.png used on input line 400.
+Package pdftex.def Info: diagram3.png used on input line 398.
 (pdftex.def)             Requested size: 258.0pt x 161.2516pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 400--401
+Overfull \hbox (6.0pt too wide) in paragraph at lines 398--399
  [] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+ []
+
+<overall_cct2.jpg, id=69, 3027.31pt x 2167.09625pt>
+File: overall_cct2.jpg Graphic file (type jpg)
+ <use overall_cct2.jpg>
+Package pdftex.def Info: overall_cct2.jpg used on input line 413.
+(pdftex.def)             Requested size: 516.0pt x 369.36044pt.
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Text page 6 contains only floats.
-
-[6 <./lpf_v2.png> <./lpf_op3.png> <./lpf_op4.png> <./lpf_op5.png> <./lpf_osc2.p
-ng (PNG copy)>] ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 []\OT1/ptm/m/n/8 \LF353 Datasheet." [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 []\OT1/ptm/m/n/8 \2N7000 Datasheet." [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 \OT1/ptm/m/n/8 https://www.onsemi.com/pub/Collateral/2N7000-D.PDF. [Ac-cessed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 []\OT1/ptm/m/n/8 \LF353 Datasheet." [On-line]. Avail-able:
  []
 
-[7 <./lpf_osc4.png (PNG copy)> <./lpf_osc5.png (PNG copy)> <./diagram3.png>]
-(EE313_Project_V_1_1.aux) ) 
+[7 <./lpf_osc5.png (PNG copy)> <./lpf_osc2.png (PNG copy)> <./diagram3.png>]
+[8 <./overall_cct2.jpg>] (EE313_Project_V_1_1.aux) ) 
 Here is how much of TeX's memory you used:
- 16921 strings out of 493323
- 320907 string characters out of 3139066
- 375605 words of memory out of 3000000
- 20089 multiletter control sequences out of 15000+200000
+ 16929 strings out of 493323
+ 321033 string characters out of 3139066
+ 375614 words of memory out of 3000000
+ 20095 multiletter control sequences out of 15000+200000
  45214 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,94p,1884b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on EE313_Project_V_1_1.pdf (7 pages, 810669 bytes).
+{C:/Program Files/MiKTeX 2.
+9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on EE313_Project_V_1_1.pdf (8 pages, 2532562 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
