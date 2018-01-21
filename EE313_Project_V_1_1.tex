@@ -222,11 +222,11 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	where K is a constant and $v_s$ is the speed of sound.
 	
 	
-\begin{figure}[h!]
-\setlength{\unitlength}{\textwidth}
-\center 
-\includegraphics[width=0.45\unitlength]{mixer_v2_2.png}
-\caption{\label{fig:mixer}A Mixer Circuit }
+\begin{figure}[t!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.45\unitlength]{mixer_v2_2.png}
+	\caption{\label{fig:mixer}A Mixer Circuit }
 \end{figure}	
 
 
@@ -247,7 +247,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	For that reasons, a mixer circuit is a very crucial part of our project to be designed. A basic mixer circuit we have used can be seen at \textit{Figure~\ref{fig:mixer}}.
 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \setlength{\unitlength}{\textwidth}
 \center 
 \includegraphics[width=0.45\unitlength]{mixer_op3.png}
@@ -276,17 +276,7 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \includegraphics[width=0.45\unitlength]{mixer_osc1.png}
 \caption{\label{fig:mixerosc1} The Practical Output Waveform of the Mixer Circuit }
 \end{figure}	
-
-
-%\begin{figure}[h!]
-%\setlength{\unitlength}{\textwidth}
-%\center 
-%\includegraphics[width=0.45\unitlength]{mixer_osc2.png}
-%\caption{\label{fig:mixerosc2} The Practical Output Waveform of the Mixer Circuit }
-%\end{figure}	
-
-		
-				
+	
 \subsection{Low Pass Filter}
 
 
@@ -325,23 +315,19 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	$$~C~=~10~nF~=~10^{-8}~F$$
 	Resistance $R$ can be found as
 	$$ R~=\frac{1}{2\pi*1.5*10^3*10^{-8}}\approx~10~k\Omega $$
-	
-	
-
-
 \begin{figure}[h!]
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.5\unitlength]{lpf_v2.png}
 	\caption{\label{fig:lpf}An Active Second Order Low-Pass Filter }
 \end{figure} 
-	
+
 	To test the design of the low pass filter, firstly LTSpice was used as a simulation tool. As can be seen from the \textit{Figure~\ref{fig:pslpf}}, a voltage input applied as an input and output is observed. For three different sinusoidal input, the input and output waveforms can be seen at \textit{Figures~\ref{fig:lpfop3}, \ref{fig:lpfop4}, \ref{fig:lpfop5}}. 
 	
 	Similar methodology was used at the laboratory. By giving sinusoidal inputs with different frequencies from signal generator, the outputs were observed through oscilloscope. The \textit{Figures~\ref{fig:lpfosc2}, \ref{fig:lpfosc4} and \ref{fig:lpfosc5}} shows the input and output waveforms for the low pass filter having approximately $4~kHz$ cutoff frequency that we designed earlier at the design step. Unfortunately, we forgot to take similar screenshots for the latest version of our filter.
 	
 	
-\begin{figure}[H]
+\begin{figure}[h]
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.45\unitlength]{lpf_op3.png}
@@ -389,20 +375,11 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 	\includegraphics[width=0.45\unitlength]{lpf_osc2.png}
 	\caption{\label{fig:lpfosc2}Practical Input \& Output Signal for 16 kHz}
 \end{figure} 
-
-\-\\[0.5cm]
 		
 \section{Overall Project}
 
 
-	Overall project built at the laboratory on breadboard which has a schematic representation in \textit{Figure~\ref{fig:diagram_Final}} can be seen at \textit{Figure~\ref{fig:overall}}. \\[7cm]
-
-\begin{figure*}[h!]
-\setlength{\unitlength}{\textwidth}
-\center 
-\includegraphics[width=1.0\unitlength]{overall_cct2.jpg}
-\caption{\label{fig:overall}Overall Project }
-\end{figure*}	
+	Overall project built at the laboratory on breadboard which has a schematic representation in \textit{Figure~\ref{fig:diagram_Final}} can be seen at \textit{Figure~\ref{fig:overall}}.
 
 \section{Conclusion}
 
@@ -420,5 +397,12 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 %\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 %\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
+
+\begin{figure*}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=1.0\unitlength]{overall_cct2.jpg}
+	\caption{\label{fig:overall}Overall Project }
+\end{figure*}	
 
 \end{document}
