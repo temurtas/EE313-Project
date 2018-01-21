@@ -289,42 +289,54 @@ The resulting $f_c$ will be enough to remove noise and DC offsets.
 \subsection{Low Pass Filter}
 
 
-	Unfortunately, the output signal of mixer does not only carry the frequency difference information but also frequency summation information. Since we are interested with the difference between the frequencies only, a low pass filter should be used to extract the wanted signal.
+	Unfortunately, the output signal of the Mixer did not only carry the frequency difference information but also frequency summation information. Since we are only interested in the difference between the frequencies only, a low pass filter was used to extract the wanted signal.
 
-	Low Pass Filters are the type of filters that passes and amplifies the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. 	
 
-	A basic second order low-pass filter that we are going to use can be seen at \textit{Figure~\ref{fig:lpf}}. 		 
+\begin{figure}[h!]
+	\setlength{\unitlength}{\textwidth}
+	\center 
+	\includegraphics[width=0.5\unitlength]{lpf_v4.png}
+	\caption{\label{fig:pslpf}A Passive Second Order Low-Pass Filter }
+\end{figure} 	
+	
+	Low Pass Filters are the type of filters that passes the signals having the frequencies lower that the desired frequencies also known as the cut-off frequencies of the filter. Other signals having higher frequencies would be eliminated at the output of the low pass filter. Low pass filter can be categorized by their included capacitor number. For instance, if one low pass filter includes only one capacitor and resistor, it can be named as first order low pass filter. Similarly, a filter with two capacitor can be considered as second order low pass filter. In our design we preferred to use a second order low pass filter in order to get sharp enough frequency response. A basic second order low-pass filter can be seen at \textit{Figure~\ref{fig:pslpf}} \\ 
+	
+	Low pass filters can also be categorized into two main type that are active filters and passive filters. Active filters are the ones that can amplify the desired signals and eliminate otherwise. These type of filters generally includes an op-amp for that purpose.  A simple active second order low-pass filter can be seen at \textit{Figure~\ref{fig:lpf}}. Whereas the passive low pass filters can only supply desired output signal with maximum unity gain. A general passive second order low-pass filter can be seen at \textit{Figure~\ref{fig:pslpf}}.  		 
 
+	After considering the active one, we have decided using a passive second order low pass filter at \textit{Figure~\ref{fig:pslpf}}. For choosing proper resistance and capacitance values, the some KCL and KVL operations can be conducted on the circuit at S-Domain.
 	
-	Doing some KCL at the circuit ,at \textit{Figure~\ref{fig:lpf}}, at S-Domain and setting the expressions in order, the gain and cut-off frequency can be found;
+	$$	V_A~=~\frac{V_{in}*R}{R+\frac{1}{sC}//(R_2+\frac{1}{sC_2})}	$$  	
 	
-	
-	$$ \frac{V_a - V_{in}}{R}+\frac{V_a-V_o}{1/sC}+\frac{V_a-Vo/2}{R} ~=~0$$
-	
-	$$ \frac{V_o/2-V_a}{R}+\frac{V0/2}{1/sC} ~=~0	 $$
-	
-	If the expressions are set in order, the gain and cut-off frequency can be found to be;
-	
-	$$ A_V = ~1~+ \frac{R_A}{R_B} $$
+	$$	V_{out}~=~\frac{V_A*\frac{1}{sC_2}}{R_2+\frac{1}{sC_2}}	$$	
 
+	Transfer function being	
+	
+	$$ H(s)~=~\frac{V_{out}}{V_{in}}$$
+	
+	Cut-off frequency can be found by rearranging terms into wanted form. If we equate $R~=~R_1$ \& $C~=~C_1$ for the simplicity, after some effort the cut-off frequency can be found as
+	
 	$$	f_c ~=~ \frac{1}{2\pi RC}	$$
 	
-	Assuming same resistance and capacitor values for simplicity. The resistance values can be found from there assuming the capacitor values for desired frequency. For 
-	$$~f~=~1~kHz~=~10^3~Hz $$ 
+	The resistance values can be found from there by assuming the capacitor values for desired frequency. For 
+	
+	$$~f~=~1.5~kHz~=~1.5*10^3~Hz $$ 
 	$$ \& $$ 
 	$$~C~=~10~nF~=~10^{-8}~F$$
 	Resistance $R$ can be found as
-	$$ R~=\frac{1}{2\pi*10^3*10^{-8}}\approx~16~k\Omega $$
-	$R_A$ \& $R_B$ can be chosen equal to each other and $1~k\Omega$ for the simplicity.
+	$$ R~=\frac{1}{2\pi*1.5*10^3*10^{-8}}\approx~10~k\Omega $$
+	
+	
 
-	 To test
 
 \begin{figure}[h!]
 	\setlength{\unitlength}{\textwidth}
 	\center 
 	\includegraphics[width=0.5\unitlength]{lpf_v2.png}
-	\caption{\label{fig:lpf}A Second Order Low-Pass Filter }
+	\caption{\label{fig:lpf}An Active Second Order Low-Pass Filter }
 \end{figure} 
+	
+	\-\\ \-\\ \-\- To test the filter at dasjbdjasdjasvdjhavsdjgasvdjgasvdjgawvjgdjgadjaewjd 
+	
 	
 \begin{figure}[h!]
 	\setlength{\unitlength}{\textwidth}
